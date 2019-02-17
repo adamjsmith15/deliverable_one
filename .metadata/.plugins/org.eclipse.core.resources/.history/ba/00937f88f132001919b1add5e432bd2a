@@ -1,0 +1,43 @@
+package deliverable_one;
+import java.util.Scanner;
+
+public class whatToEat {
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		String eventType;
+		int partySize;
+		String result;
+		
+		//Get event type
+		eventType = scnr.next();
+		//Get party size
+		partySize = scnr.nextInt();
+		result = "Since you're hosting a ";
+		
+		if(eventType.equals("casual")) {
+			// FIXME sandwiches added to result string
+		}
+		else if(eventType.equals("semi-formal")) {
+			// FIXME fried chicken added to result string
+		}
+		else if(eventType.equals("formal")) {
+			// FIXME chicken parmesan added to result string
+		}
+		else {
+			// FIXME better error message
+			System.out.println("Error, input not recognized.");
+		}
+		
+		if(partySize == 1) {
+			// FIXME add in the microwave to result string
+		}
+		else if(partySize >= 2 && partySize <= 12) {
+			// FIXME add in your kitchen to the result string
+		}
+		else if(partySize > 12) {
+			// FIXME add by a caterer to the result string
+		}
+		System.out.println(result);
+	}
+
+}
